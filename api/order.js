@@ -1,17 +1,25 @@
 // Vercel Serverless Function — mijoz buyurtmalarini Telegram botga yuboradi.
-// Token va chat ID xavfsizlik uchun bu yerda (serverda) saqlanadi —
-// brauzerga / sahifa manbasiga hech qachon chiqmaydi.
 //
-// Eng yaxshi amaliyot: bu qiymatlarni Vercel "Environment Variables"
-// bo'limiga qo'ying (TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID). Agar
-// o'zgaruvchilar berilmasa, pastdagi standart qiymatlar ishlatiladi.
+// XAVFSIZLIK: token va chat ID kodda EMAS, balki Vercel
+// "Environment Variables" bo'limida saqlanadi. Shuning uchun repo
+// public bo'lsa ham maxfiy ma'lumotlar ochilmaydi.
+//
+// Vercel → Project → Settings → Environment Variables:
+//   TELEGRAM_BOT_TOKEN = <BotFather bergan yangi token>
+//   TELEGRAM_CHAT_ID   = -1003770834725   (Ramantik ayiq 2 kanali)
 
-const BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN || "8741253076:AAETkIu6bkc6LalzuCSsqvsbHecIVvPBceY";
-const CHAT_ID   = process.env.TELEGRAM_CHAT_ID   || "-1003770834725"; // Ramantik ayiq 2 kanali
+const BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
+const CHAT_ID   = process.env.TELEGRAM_CHAT_ID;
 
 export default async function handler(req, res) {
   if (req.method !== "POST") {
     return res.status(405).json({ ok: false, error: "method_not_allowed" });
+  }
+
+  // Sozlama tekshiruvi: env o'zgaruvchilari qo'yilmagan bo'lsa.
+  if (!BOT_TOKEN || !CHAT_ID) {
+    console.error("Missing TELEGRAM_BOT_TOKEN or TELEGRAM_CHAT_ID env vars");
+    return res.status(500).json({ ok: false, error: "not_configured" });
   }
 
   try {
