@@ -1,0 +1,21 @@
+# Bog'liqliklar
+node_modules/
+
+# Vercel
+.vercel
+
+# Muhit o'zgaruvchilari (maxfiy) — hech qachon yuklanmasin
+.env
+.env*.local
+
+# OS fayllari
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Muharrir
+.vscode/
+.idea/
+
+# Loglar
+*.log

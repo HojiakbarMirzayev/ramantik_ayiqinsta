@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '4493705470913059');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=4493705470913059&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<title>Sevgi Ayiqchasi — Unutilmas sovg'a 🌹</title>
+<meta name="description" content="Sevgilingizga eng iliq sovg'a. Atirgul tutgan yumshoq ayiqcha — bergan kuningizni umrbod eslab qoladi." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#fbf3ea;
+    --cream-2:#f4e3d3;
+    --brown:#7a4f2b;
+    --brown-deep:#5a3618;
+    --rose:#c5132b;
+    --rose-deep:#9c0d20;
+    --gold:#c79a4b;
+    --text:#3d2a1b;
+    --soft:#8a6f59;
+    --shadow:0 18px 50px rgba(122,79,43,.18);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Manrope',system-ui,sans-serif;
+    color:var(--text);
+    background:
+      radial-gradient(120% 80% at 50% -10%, #fff8f0 0%, var(--cream) 55%, var(--cream-2) 100%);
+    line-height:1.55;
+    overflow-x:hidden;
+  }
+  .wrap{max-width:480px;margin:0 auto;padding:0 20px;}
+
+  /* ===== HERO — bitta ekran ===== */
+  .hero{
+    min-height:100svh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:22px 20px 14px;
+    position:relative;
+  }
+  .badge{
+    display:inline-flex;align-items:center;gap:7px;
+    background:rgba(197,19,43,.10);
+    color:var(--rose-deep);
+    font-weight:700;font-size:12.5px;letter-spacing:.4px;
+    padding:7px 15px;border-radius:50px;
+    border:1px solid rgba(197,19,43,.22);
+    margin-bottom:14px;
+  }
+  .badge .dot{width:7px;height:7px;border-radius:50%;background:var(--rose);box-shadow:0 0 0 4px rgba(197,19,43,.18);animation:pulse 1.8s infinite;}
+  @keyframes pulse{50%{box-shadow:0 0 0 8px rgba(197,19,43,0);}}
+
+  h1{
+    font-family:'Playfair Display',serif;
+    font-weight:700;
+    font-size:30px;
+    line-height:1.18;
+    color:var(--brown-deep);
+    letter-spacing:-.3px;
+  }
+  h1 .accent{color:var(--rose);font-style:italic;}
+  .sub{
+    margin-top:11px;
+    font-size:15px;
+    color:var(--soft);
+    max-width:340px;
+  }
+
+  .photo{
+    position:relative;
+    margin:16px auto 8px;
+    width:min(80vw,290px);
+  }
+  .photo::before{
+    content:"";position:absolute;inset:-6% -6% 4%;
+    background:radial-gradient(closest-side, rgba(199,154,75,.30), transparent 72%);
+    filter:blur(8px);z-index:0;
+  }
+  .photo img{
+    position:relative;z-index:1;
+    width:100%;border-radius:26px;
+    box-shadow:var(--shadow);
+    border:5px solid #fff;
+  }
+  .heart{position:absolute;z-index:2;font-size:26px;animation:float 3s ease-in-out infinite;}
+  .heart.h1{top:-6px;right:2px;}
+  .heart.h2{bottom:30px;left:-14px;font-size:40px;animation-delay:.6s;}
+  @keyframes float{50%{transform:translateY(-9px) rotate(-6deg);}}
+
+  .price-row{
+    display:flex;align-items:baseline;justify-content:center;gap:12px;
+    margin-top:6px;flex-wrap:wrap;
+  }
+  .price-now{
+    font-family:'Playfair Display',serif;
+    font-weight:700;font-size:34px;color:var(--rose);
+    letter-spacing:-.5px;white-space:nowrap;
+  }
+  .price-old{font-size:17px;color:#b9a797;text-decoration:line-through;white-space:nowrap;}
+  .price-off{
+    background:var(--rose);color:#fff;font-weight:800;font-size:12px;
+    padding:4px 9px;border-radius:8px;align-self:center;
+  }
+
+  .cta{
+    display:block;width:100%;max-width:340px;margin:16px auto 0;
+    background:linear-gradient(135deg,#d8253c,var(--rose-deep));
+    color:#fff;font-weight:800;font-size:17px;letter-spacing:.2px;
+    text-align:center;text-decoration:none;
+    padding:17px 20px;border-radius:16px;border:none;cursor:pointer;
+    box-shadow:0 14px 30px rgba(197,19,43,.36);
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .cta:active{transform:scale(.97);}
+  .cta .small{display:block;font-weight:600;font-size:12px;opacity:.92;margin-top:2px;}
+
+  .scroll-hint{
+    margin-top:14px;color:var(--soft);font-size:12.5px;font-weight:600;
+    display:flex;flex-direction:column;align-items:center;gap:2px;
+  }
+  .scroll-hint .arr{font-size:18px;animation:bob 1.6s infinite;}
+  @keyframes bob{50%{transform:translateY(5px);}}
+
+  /* ===== 2-XUSUSIYAT ===== */
+  .feature{padding:10px 0 6px;text-align:center;}
+  .feat-title{
+    font-family:'Playfair Display',serif;font-weight:700;font-size:23px;
+    color:var(--brown-deep);line-height:1.22;
+  }
+  .feat-title .accent{color:var(--rose);font-style:italic;}
+  .feat-sub{margin:9px auto 14px;font-size:14px;color:var(--soft);max-width:350px;}
+  .feat-photo{position:relative;width:min(88vw,360px);margin:0 auto;}
+  .feat-photo::before{
+    content:"";position:absolute;inset:-5%;
+    background:radial-gradient(closest-side, rgba(199,154,75,.28), transparent 72%);
+    filter:blur(8px);z-index:0;
+  }
+  .feat-photo img{
+    position:relative;z-index:1;width:100%;border-radius:24px;
+    box-shadow:var(--shadow);border:5px solid #fff;
+  }
+
+  /* ===== ISHONCH SATR ===== */
+  .trust{
+    display:flex;gap:8px;margin:18px 0 4px;justify-content:center;flex-wrap:wrap;
+  }
+  .trust .t{
+    background:#fff;border:1px solid #efe0cf;border-radius:12px;
+    padding:9px 12px;font-size:11.5px;font-weight:700;color:var(--brown);
+    display:flex;align-items:center;gap:6px;box-shadow:0 6px 16px rgba(122,79,43,.06);
+  }
+
+  /* ===== FORMA ===== */
+  .form-sec{padding:18px 0 18px;}
+  .card{
+    background:#fff;border-radius:24px;padding:24px 20px 26px;
+    box-shadow:var(--shadow);border:1px solid #f1e2d2;
+  }
+  .form-title{
+    font-family:'Playfair Display',serif;font-weight:700;
+    font-size:21px;color:var(--brown-deep);text-align:center;
+  }
+  .form-note{text-align:center;font-size:13px;color:var(--soft);margin:6px 0 18px;}
+  label{display:block;font-size:13px;font-weight:700;color:var(--brown);margin:0 0 6px 3px;}
+  .field{margin-bottom:14px;}
+  input,select{
+    width:100%;padding:14px 15px;border-radius:13px;
+    border:1.6px solid #ecdcc9;background:#fdfaf6;
+    font-family:inherit;font-size:15px;color:var(--text);
+    transition:border-color .15s, box-shadow .15s;appearance:none;
+  }
+  select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%237a4f2b' stroke-width='3'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 15px center;padding-right:42px;}
+  input:focus,select:focus{outline:none;border-color:var(--rose);box-shadow:0 0 0 4px rgba(197,19,43,.12);}
+  .submit{
+    width:100%;margin-top:6px;
+    background:linear-gradient(135deg,#d8253c,var(--rose-deep));
+    color:#fff;font-weight:800;font-size:17px;
+    padding:17px;border:none;border-radius:15px;cursor:pointer;
+    box-shadow:0 14px 30px rgba(197,19,43,.34);transition:transform .15s;
+  }
+  .submit:active{transform:scale(.97);}
+  .guarantee{
+    margin-top:16px;text-align:center;font-size:12px;color:var(--soft);
+    line-height:1.7;
+  }
+  .guarantee b{color:var(--brown);}
+  .addr{margin-top:5px;font-size:11px;color:#a8957f;}
+  footer{text-align:center;padding:8px 0 26px;font-size:11px;color:#b6a594;}
+  footer a{color:var(--brown);text-decoration:none;font-weight:700;}
+
+  /* ===== 3D iconlar ===== */
+  .i3d{display:inline-block;height:1.25em;width:1.25em;vertical-align:-.28em;object-fit:contain;}
+  .heart img{width:1em;height:1em;display:block;filter:drop-shadow(0 5px 7px rgba(0,0,0,.20));}
+  .feat-title .i3d,.form-title .i3d{height:1.05em;width:1.05em;vertical-align:-.18em;}
+  .trust .t .i3d{height:1.35em;width:1.35em;vertical-align:-.32em;}
+
+  /* ===== Jonli orqa fon ===== */
+  body::before{
+    content:"";position:fixed;inset:-10%;z-index:-2;
+    background:
+      radial-gradient(38% 32% at 14% 18%, rgba(197,19,43,.12), transparent 70%),
+      radial-gradient(42% 38% at 86% 12%, rgba(199,154,75,.20), transparent 70%),
+      radial-gradient(48% 42% at 82% 86%, rgba(197,19,43,.10), transparent 70%),
+      radial-gradient(44% 40% at 10% 88%, rgba(199,154,75,.16), transparent 70%);
+    animation:aurora 18s ease-in-out infinite alternate;
+  }
+  @keyframes aurora{
+    0%{transform:translate3d(0,0,0) scale(1);}
+    50%{transform:translate3d(2%,-2%,0) scale(1.06);}
+    100%{transform:translate3d(-2%,2%,0) scale(1.03);}
+  }
+  /* Ikkinchi gradient qatlam — chuqurlik uchun */
+  body::after{
+    content:"";position:fixed;inset:-10%;z-index:-2;
+    background:
+      radial-gradient(30% 26% at 70% 30%, rgba(255,140,120,.10), transparent 70%),
+      radial-gradient(34% 30% at 25% 62%, rgba(199,154,75,.13), transparent 70%);
+    animation:aurora2 24s ease-in-out infinite alternate;
+  }
+  @keyframes aurora2{
+    0%{transform:translate3d(0,0,0) scale(1.05);}
+    100%{transform:translate3d(-3%,3%,0) scale(1);}
+  }
+  /* Yumshoq suzuvchi nur to'plari (bokeh) */
+  #orbs{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none;}
+  .orb{position:absolute;border-radius:50%;filter:blur(36px);opacity:.5;will-change:transform;}
+  .orb.a{width:240px;height:240px;left:-60px;top:7%;background:radial-gradient(circle,#f7b6bf,transparent 70%);animation:floatA 17s ease-in-out infinite;}
+  .orb.b{width:300px;height:300px;right:-90px;top:40%;background:radial-gradient(circle,#f0d9a8,transparent 70%);animation:floatB 21s ease-in-out infinite;}
+  .orb.c{width:220px;height:220px;left:18%;bottom:-70px;background:radial-gradient(circle,#f5a8b4,transparent 70%);animation:floatC 19s ease-in-out infinite;}
+  @keyframes floatA{50%{transform:translate(40px,30px) scale(1.1);}}
+  @keyframes floatB{50%{transform:translate(-50px,-30px) scale(1.08);}}
+  @keyframes floatC{50%{transform:translate(30px,-40px) scale(1.12);}}
+
+  /* ===== Tugmalar: nur + tebranish ===== */
+  .cta,.submit{position:relative;z-index:1;animation:btnBeat 2.4s ease-in-out infinite;}
+  .cta::before,.submit::before{
+    content:"";position:absolute;inset:-7px;border-radius:inherit;z-index:-1;
+    background:linear-gradient(135deg,#ff6a7c,#d8253c,#9c0d20);
+    filter:blur(16px);opacity:.5;animation:btnGlow 2.4s ease-in-out infinite;
+  }
+  @keyframes btnBeat{
+    0%,100%{transform:scale(1) translateY(0);}
+    50%{transform:scale(1.035) translateY(-2px);}
+  }
+  @keyframes btnGlow{
+    0%,100%{opacity:.42;}
+    50%{opacity:.85;}
+  }
+  .cta:active,.submit:active{animation-play-state:paused;transform:scale(.97);}
+
+  @media (prefers-reduced-motion: reduce){
+    body::before,body::after,.orb,.cta,.submit,.cta::before,.submit::before{animation:none;}
+  }
+
+  /* ===== Shoshilinch banner + timer ===== */
+  #urgentBar{
+    position:fixed;top:0;left:0;right:0;z-index:60;
+    display:flex;align-items:center;justify-content:center;gap:9px;
+    background:linear-gradient(135deg,#e0314a,#9c0d20);
+    color:#fff;font-weight:700;font-size:13.5px;letter-spacing:.2px;
+    padding:10px 14px;text-align:center;
+    box-shadow:0 8px 26px rgba(156,13,32,.42);
+    transform:translateY(-120%);
+    transition:transform .55s cubic-bezier(.2,.85,.25,1);
+  }
+  #urgentBar.show{transform:translateY(0);}
+  #urgentBar img{width:19px;height:19px;flex:none;filter:drop-shadow(0 2px 3px rgba(0,0,0,.25));}
+  #urgentBar b{font-weight:800;}
+  #urgentBar .ub-timer{
+    background:rgba(255,255,255,.20);
+    padding:3px 10px;border-radius:9px;
+    font-weight:800;font-variant-numeric:tabular-nums;
+    min-width:62px;text-align:center;
+    box-shadow:inset 0 0 0 1px rgba(255,255,255,.25);
+    animation:ubBlink 1s steps(1) infinite;
+  }
+  @keyframes ubBlink{50%{background:rgba(255,255,255,.34);}}
+</style>
+</head>
+<body>
+  <div id="orbs" aria-hidden="true"><span class="orb a"></span><span class="orb b"></span><span class="orb c"></span></div>
+
+  <!-- Shoshilinch banner (formaga yetganda chiqadi) -->
+  <div id="urgentBar" aria-live="polite">
+    <img src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Fire/3D/fire_3d.png" alt="" />
+    <span>Shoshiling! Omborda <b>17 ta</b> qoldi</span>
+    <span class="ub-timer" id="ubTimer">30:00</span>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap" style="display:flex;flex-direction:column;align-items:center;">
+      <span class="badge"><span class="dot"></span> Eng ko'p tanlangan sevgi sovg'asi</span>
+
+      <h1>Uning yuragiga<br><span class="accent">bir umrlik</span> iz qoldiring</h1>
+      <p class="sub">Atirgul tutib turgan bu yumshoq ayiqcha shunchaki o'yinchoq emas — bu sizning <b>“sevaman”</b> degan so'zingiz. <b>Atirgullarini boshiga taqsangiz — yoqimli gulli qalpoqchaga aylanadi! <img class="i3d" src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Cherry%20blossom/3D/cherry_blossom_3d.png" alt=""></b> Bergan kuningizni u hech qachon unutmaydi.</p>
+
+      <div class="photo">
+        <span class="heart h1"><img src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Red%20heart/3D/red_heart_3d.png" alt=""></span>
+        <span class="heart h2"><img src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Rose/3D/rose_3d.png" alt=""></span>
+        <img src="bear-roses.jpg" alt="Atirgul tutgan sevgi ayiqchasi" />
+      </div>
+
+      <div class="price-row">
+        <span class="price-now">195 000 so'm</span>
+        <span class="price-old">390 000</span>
+        <span class="price-off">-49%</span>
+      </div>
+
+      <a href="#buyurtma" class="cta">
+        Buyurtma bermoqchiman
+        <span class="small"><img class="i3d" src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Delivery%20truck/3D/delivery_truck_3d.png" alt=""> Aksiya bugun — joylar cheklangan</span>
+      </a>
+
+      <div class="scroll-hint">
+        <span>Buyurtma berish uchun pastga suring</span>
+        <span class="arr">↓</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2-XUSUSIYAT: gul -> qalpoq -->
+  <section class="feature">
+    <div class="wrap">
+      <h2 class="feat-title">Bitta sovg'a — <span class="accent">ikki xil quvonch</span> <img class="i3d" src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Rose/3D/rose_3d.png" alt="">→<img class="i3d" src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Top%20hat/3D/top_hat_3d.png" alt=""></h2>
+      <p class="feat-sub">Atirgul guldastasini boshiga taqib, ayiqchani chiroyli gulli qalpoqchada ko'ring. Sevgilingiz bu mo''jizadan hayratda qoladi!</p>
+      <div class="feat-photo">
+        <img src="bear-hats.jpg" alt="Atirgulli qalpoq kiygan ayiqchalar" />
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMA -->
+  <section class="form-sec" id="buyurtma">
+    <div class="wrap">
+
+      <div class="trust">
+        <span class="t"><img class="i3d" src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Check%20mark%20button/3D/check_mark_button_3d.png" alt=""> Original mahsulot</span>
+        <span class="t"><img class="i3d" src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Shield/3D/shield_3d.png" alt=""> 100% Kafolat</span>
+        <span class="t"><img class="i3d" src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Package/3D/package_3d.png" alt=""> Tezkor yetkazish</span>
+      </div>
+
+      <div class="card" style="margin-top:14px;">
+        <h2 class="form-title">Ma'lumotlaringizni qoldiring <img class="i3d" src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Wrapped%20gift/3D/wrapped_gift_3d.png" alt=""></h2>
+        <p class="form-note">Mutaxassisimiz siz bilan bog'lanadi va buyurtmani rasmiylashtiradi.</p>
+
+        <form id="orderForm" novalidate>
+          <input type="text" name="website" id="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;" aria-hidden="true" />
+          <div class="field">
+            <label for="name">Ismingiz</label>
+            <input type="text" id="name" name="name" placeholder="Masalan: Diyorbek" required />
+          </div>
+
+          <div class="field">
+            <label for="phone">Telefon raqamingiz</label>
+            <input type="tel" id="phone" name="phone" value="+998" placeholder="+998901234567" inputmode="numeric" required />
+          </div>
+
+          <div class="field">
+            <label for="region">Yashash manzilingiz</label>
+            <select id="region" name="region" required>
+              <option value="" disabled selected>Viloyatni tanlang</option>
+              <option>Toshkent shahar</option>
+              <option>Toshkent viloyati</option>
+              <option>Andijon</option>
+              <option>Buxoro</option>
+              <option>Farg'ona</option>
+              <option>Jizzax</option>
+              <option>Xorazm</option>
+              <option>Namangan</option>
+              <option>Navoiy</option>
+              <option>Qashqadaryo</option>
+              <option>Qoraqalpog'iston</option>
+              <option>Samarqand</option>
+              <option>Sirdaryo</option>
+              <option>Surxondaryo</option>
+            </select>
+          </div>
+
+          <button type="submit" class="submit">Buyurtma bermoqchiman — 195 ming so'm</button>
+        </form>
+
+        <div class="guarantee">
+          <img class="i3d" src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Shield/3D/shield_3d.png" alt=""> <b>To'liq kafolat:</b> mahsulot sifati yoqmasa — pulingiz qaytariladi.<br>
+          Yakka tadbirkor: <b>YTT 305 482 197</b> · Aloqa: <b>+998 91 608 09 98</b>
+          <div class="addr"><img class="i3d" src="https://cdn.jsdelivr.net/gh/microsoft/fluentui-emoji@main/assets/Round%20pushpin/3D/round_pushpin_3d.png" alt=""> Toshkent shahar, Index bozori, C1141-do'kon</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<script>
+  // ===== Shoshilinch banner + 30 daqiqalik teskari timer =====
+  (function(){
+    const bar = document.getElementById('urgentBar');
+    const out = document.getElementById('ubTimer');
+    const formSec = document.getElementById('buyurtma');
+    if(!bar || !out || !formSec) return;
+
+    const DURATION = 30 * 60 * 1000; // 30 daqiqa
+    const KEY = 'ayiqcha_deadline';
+    let deadline = parseInt(localStorage.getItem(KEY) || '0', 10);
+
+    function tick(){
+      let rem = deadline - Date.now();
+      if(rem <= 0){
+        // Vaqt tugadi — yana 30 daqiqadan boshlaymiz.
+        deadline = Date.now() + DURATION;
+        localStorage.setItem(KEY, String(deadline));
+        rem = DURATION;
+      }
+      const m = Math.floor(rem / 60000);
+      const s = Math.floor((rem % 60000) / 1000);
+      out.textContent = String(m).padStart(2,'0') + ':' + String(s).padStart(2,'0');
+    }
+
+    let started = false;
+    function show(){
+      if(started) return;
+      started = true;
+      // Agar timer hali boshlanmagan yoki tugagan bo'lsa — yangidan 30 daqiqa.
+      if(!deadline || deadline < Date.now()){
+        deadline = Date.now() + DURATION;
+        localStorage.setItem(KEY, String(deadline));
+      }
+      tick();
+      bar.classList.add('show');
+      setInterval(tick, 1000);
+    }
+
+    if('IntersectionObserver' in window){
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((e) => { if(e.isIntersecting) show(); });
+      }, { threshold: 0.15 });
+      io.observe(formSec);
+    } else {
+      // Eski brauzer uchun zaxira: skroll orqali tekshirish.
+      window.addEventListener('scroll', function chk(){
+        if(formSec.getBoundingClientRect().top < window.innerHeight * 0.85){
+          show(); window.removeEventListener('scroll', chk);
+        }
+      });
+    }
+  })();
+
+  // Buyurtma o'z saytimizning maxfiy API'siga yuboriladi (Vercel function).
+  const ORDER_ENDPOINT = "/api/order";
+
+  const form = document.getElementById('orderForm');
+  const btn = form.querySelector('.submit');
+  const btnText = btn.textContent;
+
+  // ===== Telefon: +998 prefiksi doim turadi =====
+  const phoneEl = document.getElementById('phone');
+  const PREFIX = "+998";
+  function enforcePrefix(){
+    let digits = phoneEl.value.replace(/\D/g, '');     // faqat raqamlar
+    if(digits.startsWith('998')) digits = digits.slice(3);
+    digits = digits.slice(0, 9);                        // 9 ta raqam (90 123 45 67)
+    phoneEl.value = PREFIX + digits;
+  }
+  phoneEl.addEventListener('focus', () => { if(!phoneEl.value.startsWith(PREFIX)) phoneEl.value = PREFIX; });
+  phoneEl.addEventListener('input', enforcePrefix);
+  phoneEl.addEventListener('keydown', (e) => {
+    // +998 qismini o'chirib bo'lmasin
+    if((e.key === 'Backspace' || e.key === 'Delete') &&
+       phoneEl.selectionStart <= PREFIX.length &&
+       phoneEl.selectionStart === phoneEl.selectionEnd){
+      e.preventDefault();
+    }
+  });
+
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    const name = document.getElementById('name').value.trim();
+    const phone = phoneEl.value.trim();
+    const region = document.getElementById('region').value;
+    const website = document.getElementById('website').value; // spam-tuzoq
+
+    const phoneDigits = phone.replace(/\D/g, ''); // 998 + 9 = 12 ta bo'lishi kerak
+    if(!name || phoneDigits.length < 12 || !region){
+      alert("Iltimos, barcha maydonlarni to'g'ri to'ldiring 🙏\n(Telefon: +998 dan keyin 9 ta raqam)");
+      return;
+    }
+
+    btn.disabled = true;
+    btn.textContent = "Yuborilmoqda...";
+
+    try{
+      const res = await fetch(ORDER_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, phone, region, website })
+      });
+      const data = await res.json().catch(() => ({ ok: res.ok }));
+      if(!res.ok || !data.ok){ throw new Error('send failed'); }
+
+      window.location.href = 'thank-you.html?name=' + encodeURIComponent(name);
+    }catch(err){
+      btn.disabled = false;
+      btn.textContent = btnText;
+      alert("Kechirasiz, buyurtmani yuborishda xatolik. Iltimos, qayta urinib ko'ring yoki +998 91 608 09 98 raqamiga qo'ng'iroq qiling.");
+    }
+  });
+</script>
+</body>
+</html>
