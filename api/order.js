@@ -40,6 +40,9 @@ export default async function handler(req, res) {
     }
 
     const text =
+      "🐻📸 <b>AYIQCHA INSTAGRAMI</b>\n" +
+      "#ayiqcha_instagrami\n" +
+      "➖➖➖➖➖➖➖➖\n" +
       "🧸 <b>Yangi buyurtma — Sevgi Ayiqchasi</b>\n\n" +
       "👤 <b>Ism:</b> " + escapeHtml(name) + "\n" +
       "📞 <b>Telefon:</b> " + escapeHtml(phone) + "\n" +
