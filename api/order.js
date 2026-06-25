@@ -5,11 +5,14 @@
 // public bo'lsa ham maxfiy ma'lumotlar ochilmaydi.
 //
 // Vercel → Project → Settings → Environment Variables:
-//   TELEGRAM_BOT_TOKEN = <BotFather bergan yangi token>
-//   TELEGRAM_CHAT_ID   = -1003770834725   (Ramantik ayiq 2 kanali)
+//   TELEGRAM_BOT_TOKEN = <BotFather bergan yangi token>   (MAXFIY)
+//
+// Chat ID maxfiy emas (uni bilgan odam kanalga yoza olmaydi), shuning
+// uchun u kodda qoladi. Xohlasangiz uni ham TELEGRAM_CHAT_ID env
+// o'zgaruvchisi orqali almashtirishingiz mumkin.
 
 const BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
-const CHAT_ID   = process.env.TELEGRAM_CHAT_ID;
+const CHAT_ID   = process.env.TELEGRAM_CHAT_ID || "-1003770834725"; // Ramantik ayiq 2 kanali
 
 export default async function handler(req, res) {
   if (req.method !== "POST") {
